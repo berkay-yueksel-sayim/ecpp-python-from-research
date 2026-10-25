@@ -1,0 +1,8 @@
+2026-10-03 04:49 Nr. 1 (111 Stellen): ok, 8 Schritte, 7 s, w164: ✅ angenommen
+2026-10-03 04:57 Nr. 1 (111 Stellen): ok, 7 Schritte, 6 s, w164: ✅ angenommen
+2026-10-03 04:57 Nr. 2 (112 Stellen): ok, 8 Schritte, 6 s, w164: ✅ angenommen
+2026-10-03 04:57 Nr. 3 (194 Stellen): ok, 12 Schritte, 15 s, w164: ✅ angenommen
+2026-10-03 04:58 Nr. 4 (234 Stellen): ok, 20 Schritte, 43 s, w164: ✅ angenommen
+2026-10-03 05:24 Nr. 5 (245 Stellen): ok, 18 Schritte, 74 s, w164: ✅ angenommen
+2026-10-03 05:36 Nr. 6 (477 Stellen): kein Schritt bei 388 Stellen, 9 Schritte, 790 s, w164: kein Zertifikat
+2026-10-03 06:13 Nr. 6 (477 Stellen): ok (Rueckschritte 1), 47 Schritte, 673 s, w164: ✅ angenommen

@@ -1,0 +1,21 @@
+2026-10-03 04:59 T2-Nr. 7 (48 Stellen): ok, 3 Schritte, 1 s, w164: ✅ angenommen
+2026-10-03 04:59 T2-Nr. 3 (50 Stellen): ok, 3 Schritte, 1 s, w164: ✅ angenommen
+2026-10-03 04:59 T2-Nr. 9 (50 Stellen): ok, 3 Schritte, 1 s, w164: ✅ angenommen
+2026-10-03 04:59 T2-Nr. 12 (57 Stellen): ok, 3 Schritte, 2 s, w164: ✅ angenommen
+2026-10-03 04:59 T2-Nr. 13 (57 Stellen): ok, 3 Schritte, 3 s, w164: ✅ angenommen
+2026-10-03 05:00 T2-Nr. 14 (76 Stellen): ok, 6 Schritte, 5 s, w164: ✅ angenommen
+2026-10-03 05:00 T2-Nr. 17 (108 Stellen): ok, 8 Schritte, 14 s, w164: ✅ angenommen
+2026-10-03 05:00 T2-Nr. 11 (162 Stellen): ok, 13 Schritte, 30 s, w164: ✅ angenommen
+2026-10-03 05:01 T2-Nr. 18 (162 Stellen): ok, 12 Schritte, 15 s, w164: ✅ angenommen
+2026-10-03 05:01 T2-Nr. 4 (175 Stellen): ok, 12 Schritte, 15 s, w164: ✅ angenommen
+2026-10-03 05:01 T2-Nr. 10 (221 Stellen): ok, 17 Schritte, 32 s, w164: ✅ angenommen
+2026-10-03 05:02 T2-Nr. 8 (293 Stellen): kein Schritt bei 248 Stellen, 4 Schritte, 47 s, w164: kein Zertifikat
+2026-10-03 05:04 T2-Nr. 1 (329 Stellen): ok, 27 Schritte, 127 s, w164: ✅ angenommen
+2026-10-03 05:07 T2-Nr. 15 (357 Stellen): kein Schritt bei 269 Stellen, 9 Schritte, 142 s, w164: kein Zertifikat
+2026-10-03 05:11 T2-Nr. 19 (621 Stellen): kein Schritt bei 586 Stellen, 5 Schritte, 247 s, w164: kein Zertifikat
+2026-10-03 05:31 T2-Nr. 8 (293 Stellen): ok, 26 Schritte, 244 s, w164: ✅ angenommen
+2026-10-03 05:38 T2-Nr. 15 (357 Stellen): ok, 28 Schritte, 424 s, w164: ✅ angenommen
+2026-10-03 06:25 T2-Nr. 19 (621 Stellen): ok, 59 Schritte, 1259 s, w164: ✅ angenommen
+2026-10-03 06:39 T2-Nr. 5 (639 Stellen): ok, 69 Schritte, 797 s, w164: ✅ angenommen
+2026-10-03 06:53 T2-Nr. 2 (693 Stellen): ok (Rueckschritte 1), 69 Schritte, 804 s, w164: ✅ angenommen
+2026-10-03 07:02 T2-Nr. 16 (1687 Stellen): kein Schritt bei 1687 Stellen (Rueckschritte 0), 0 Schritte, 344 s, w164: kein Zertifikat

@@ -1,0 +1,7 @@
+E1 — Grundbausteine des eigenen ECPP-Beweisers · Kontrollen K1–K5 (Erwartungen im Kopf der Datei)
+K1 Jacobi = Euler, alle p < 600, alle a: ✅
+K2 Wurzel: 593821 Faelle p < 3000 mit 0 Fehlern · gross (2^127−1, 2^255−19, 119·2^23+1, je 200 + 200 NK): 0 Fehler · NK 561 nie falsche Wurzel: ✅ ⇒ ✅
+K3 Darstellung 4N = A² + D·B² gegen erschoepfende Suche: 2861 mit, 6125 ohne Loesung, 0 Abweichungen · Atkin–Morain S. 59–60: 17401/D=8 → (202, 60), 107/D=7 → (20, 2) ⇒ ✅
+K4 Nullstelle: 85 Faelle (p in (50, 500) und 2^127−1, je vier PK + eine NK), 0 Fehler ⇒ ✅
+K5 H₂₃ (Atkin–Morain S. 43), Primzahlen 200 < p < 3000: (a) 4p = A² + 23B² loesbar: 63 Faelle, 0 ohne drei Nullstellen ✅ · (b) Rest, aber keine Darstellung: 128 Faelle, 0 mit Nullstelle ✅ · (c) Nichtrest: 193 Faelle, 0 nicht genau eine Nullstelle ✅
+ERGEBNIS: ✅ alle Kontrollen gruen · 3.8 s

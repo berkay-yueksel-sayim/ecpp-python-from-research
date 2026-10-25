@@ -1,0 +1,27 @@
+[0;31m  ***   Warning: new maximum stack size = 1500000256 (1430.512 Mbytes).[0m
+PK PARI-Zertifikat Teil I Nr. 1: 1
+NK verschobenes t: 0
+Teil I Nr. 1 (111 Stellen, 7 Schritte): 1
+Teil I Nr. 2 (112 Stellen, 8 Schritte): 1
+Teil I Nr. 3 (194 Stellen, 12 Schritte): 1
+Teil I Nr. 4 (234 Stellen, 20 Schritte): 1
+Teil I Nr. 5 (245 Stellen, 18 Schritte): 1
+Teil I Nr. 6 (477 Stellen, 47 Schritte): 1
+Teil II Nr. 1 (329 Stellen, 27 Schritte): 1
+Teil II Nr. 2 (693 Stellen, 69 Schritte): 1
+Teil II Nr. 3 (50 Stellen, 3 Schritte): 1
+Teil II Nr. 4 (175 Stellen, 12 Schritte): 1
+Teil II Nr. 5 (639 Stellen, 69 Schritte): 1
+Teil II Nr. 7 (48 Stellen, 3 Schritte): 1
+Teil II Nr. 8 (293 Stellen, 26 Schritte): 1
+Teil II Nr. 9 (50 Stellen, 3 Schritte): 1
+Teil II Nr. 10 (221 Stellen, 17 Schritte): 1
+Teil II Nr. 11 (162 Stellen, 13 Schritte): 1
+Teil II Nr. 12 (57 Stellen, 3 Schritte): 1
+Teil II Nr. 13 (57 Stellen, 3 Schritte): 1
+Teil II Nr. 14 (76 Stellen, 6 Schritte): 1
+Teil II Nr. 15 (357 Stellen, 28 Schritte): 1
+Teil II Nr. 17 (108 Stellen, 8 Schritte): 1
+Teil II Nr. 18 (162 Stellen, 12 Schritte): 1
+Teil II Nr. 19 (621 Stellen, 59 Schritte): 1
+ERGEBNIS: 23 von 23 Eigenbau-Zertifikaten von PARI als gueltig bestaetigt

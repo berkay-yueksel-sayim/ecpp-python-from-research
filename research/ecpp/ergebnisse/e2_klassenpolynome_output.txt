@@ -1,0 +1,6 @@
+E2 — Klassenpolynome H_D · Kontrollen K1–K4 (Erwartungen im Kopf der Datei)
+K1 Tab. 1 (S. 40), fundamentale D < 20 000, h ≤ 5: 6 Zeilen verglichen, Abweichungen: keine ✅ · 0.2 s
+K2 Klassenzahl 1 (S. 58–59): 9 Diskriminanten, Abweichungen: keine ✅
+K3 H₂₃ (S. 43): berechnet [1, 3491750, -5151296875, 12771880859375] (hoechster zuerst) · ✅ gleich · Rundung 9.5e-50, Routen 4.6e-63
+K4 alle fundamentalen D < 2000 mit h ≤ 10: 302 Polynome (h bis 10), Fehler: keine ✅ · 8.7 s
+ERGEBNIS: ✅ alle Kontrollen gruen · 9.0 s

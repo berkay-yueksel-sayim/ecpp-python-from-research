@@ -1,0 +1,18 @@
+E3/E4 — eigener ECPP-Schritt und eigene Kette · Pruefer: w164-Funktionen aus w164_ecpp_pruefer_2026-10-02.py · 332 Diskriminanten mit h ≤ 8 (D ≥ 7)
+K5 p = 17401, D = 8: 4p = A² + 8B² → (202, 60); Kandidaten m = (17200, 17604); 17200 dabei: ✅
+K5 p = 107, D = 7: 4p = A² + 7B² → (20, 2); Kandidaten m = (88, 128); 88 dabei: ✅
+K1 nextprime(10^40) = 10000000000000000000000000000000000000121: ok, 3 Schritte, D = [67, 67, 11], w164: ✅ angenommen · 4.0 s
+K4 verfaelscht (t+1, 2s, Punkt): ['s teilt m nicht', 's teilt m nicht', '(q−1)·Q ≠ −Q'] ⇒ ✅ alle abgelehnt
+K2 30 St.: ok, 2 Schritte, w164 ✅, 0.1 s
+K2 30 St.: ok, 2 Schritte, w164 ✅, 0.2 s
+K2 30 St.: ok, 2 Schritte, w164 ✅, 0.2 s
+K2 45 St.: ok, 3 Schritte, w164 ✅, 1.7 s
+K2 45 St.: ok, 4 Schritte, w164 ✅, 1.7 s
+K2 45 St.: ok, 3 Schritte, w164 ✅, 0.7 s
+K2 60 St.: ok, 4 Schritte, w164 ✅, 6.8 s
+K2 60 St.: ok, 3 Schritte, w164 ✅, 1.2 s
+K2 60 St.: ok, 4 Schritte, w164 ✅, 2.5 s
+K3 zusammengesetzt (39 St.): ✅ kein angenommener Schritt · 0.0 s
+K3 zusammengesetzt (40 St.): ✅ kein angenommener Schritt · 0.0 s
+K3 zusammengesetzt (40 St.): ✅ kein angenommener Schritt · 0.0 s
+ERGEBNIS: ✅ alle Kontrollen gruen · 19.1 s
