@@ -16,13 +16,18 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: ["3.10", "3.13"]
+        python-version: ["3.10", "3.11", "3.12", "3.13"]
+        extras: ["test"]
+        include:
+          - python-version: "3.12"
+            extras: "test,fast"
+    name: test (${{ matrix.python-version }}, ${{ matrix.extras }})
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
-      - run: pip install ".[test]"
+      - run: pip install ".[${{ matrix.extras }}]"
       - run: pytest -q --durations=10
         env:
           ECPP_SLOW: ${{ inputs.slow && '1' || '' }}
