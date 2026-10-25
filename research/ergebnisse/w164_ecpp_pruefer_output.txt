@@ -1,0 +1,10 @@
+w164 · 2026-10-02 18:57
+PK E1 ✅  PARI-Zertifikat fuer nextprime(10^40) angenommen
+NK E2 ✅  verfaelscht abgelehnt: N+2 → „s teilt m nicht" · t+1 → „s teilt m nicht" · Punkt → „(q−1)·Q ≠ −Q" · 2s → „s teilt m nicht"
+  (23, 161) 111 St.: ✅ bewiesen prim (ECPP, 13 Schritte), eigener Pruefer  0.1 s
+  (23, 161) 112 St.: ✅ bewiesen prim (ECPP, 13 Schritte), eigener Pruefer  0.1 s
+  (15, 399) 194 St.: ✅ bewiesen prim (ECPP, 23 Schritte), eigener Pruefer  0.4 s
+  (16057223, 19) 234 St.: ✅ bewiesen prim (ECPP, 39 Schritte), eigener Pruefer  0.7 s
+  (39, 273) 245 St.: ✅ bewiesen prim (ECPP, 34 Schritte), eigener Pruefer  0.7 s
+  (7, 1449) 477 St.: ✅ bewiesen prim (ECPP, 67 Schritte), eigener Pruefer  7.1 s
+E3 ✅  6 von 6 ECPP-Zertifikaten angenommen

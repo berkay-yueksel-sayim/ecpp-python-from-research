@@ -1,0 +1,59 @@
+Python 3.12.10 · Windows-11-10.0.26300-SP0 · Intel64 Family 6 Model 140 Stepping 1, GenuineIntel · gmpy2 (prover only): yes
+
+CHECKER (check_certificate): digits, steps, seconds
+  PARI research/ergebnisse/w164_zertifikate/cert_1.txt              111 digits   13 steps      0.1 s  VALID
+  PARI research/ergebnisse/w164_zertifikate/cert_2.txt              112 digits   13 steps      0.1 s  VALID
+  PARI research/ergebnisse/w164_zertifikate/cert_3.txt              194 digits   23 steps      0.8 s  VALID
+  PARI research/ergebnisse/w164_zertifikate/cert_4.txt              234 digits   39 steps      1.7 s  VALID
+  PARI research/ergebnisse/w164_zertifikate/cert_5.txt              245 digits   34 steps      1.6 s  VALID
+  PARI research/ergebnisse/w164_zertifikate/cert_6.txt              477 digits   67 steps     15.1 s  VALID
+  PARI research/ergebnisse/w165_zertifikate/cert_1.txt              329 digits   43 steps      4.5 s  VALID
+  PARI research/ergebnisse/w165_zertifikate/cert_2.txt              693 digits   93 steps     50.1 s  VALID
+  PARI research/ergebnisse/w165_zertifikate/cert_3.txt               50 digits    3 steps      0.0 s  VALID
+  PARI research/ergebnisse/w165_zertifikate/cert_4.txt              175 digits   23 steps      0.5 s  VALID
+  PARI research/ergebnisse/w165_zertifikate/cert_5.txt              639 digits   87 steps     39.1 s  VALID
+  PARI research/ergebnisse/w165_zertifikate/cert_6.txt             1191 digits  157 steps    418.6 s  VALID
+  PARI research/ergebnisse/w165_zertifikate/cert_7.txt               48 digits    5 steps      0.0 s  VALID
+  PARI research/ergebnisse/w165_zertifikate/cert_8.txt              293 digits   39 steps      3.2 s  VALID
+  PARI research/ergebnisse/w165_zertifikate/cert_9.txt               50 digits    4 steps      0.0 s  VALID
+  PARI research/ergebnisse/w165_zertifikate/cert_10.txt             221 digits   28 steps      2.0 s  VALID
+  PARI research/ergebnisse/w165_zertifikate/cert_11.txt             162 digits   21 steps      0.6 s  VALID
+  PARI research/ergebnisse/w165_zertifikate/cert_12.txt              57 digits    7 steps      0.0 s  VALID
+  PARI research/ergebnisse/w165_zertifikate/cert_13.txt              57 digits    5 steps      0.0 s  VALID
+  PARI research/ergebnisse/w165_zertifikate/cert_14.txt              76 digits    6 steps      0.0 s  VALID
+  PARI research/ergebnisse/w165_zertifikate/cert_15.txt             357 digits   52 steps      9.8 s  VALID
+  PARI research/ergebnisse/w165_zertifikate/cert_16.txt            1687 digits  184 steps   1311.0 s  VALID
+  PARI research/ergebnisse/w165_zertifikate/cert_17.txt             108 digits   14 steps      0.2 s  VALID
+  PARI research/ergebnisse/w165_zertifikate/cert_18.txt             162 digits   21 steps      0.5 s  VALID
+  PARI research/ergebnisse/w165_zertifikate/cert_19.txt             621 digits   85 steps     53.0 s  VALID
+  own  research/ecpp/ergebnisse/e5_cert_1_eigen.txt                 111 digits    7 steps      0.1 s  VALID
+  own  research/ecpp/ergebnisse/e5_cert_2_eigen.txt                 112 digits    8 steps      0.1 s  VALID
+  own  research/ecpp/ergebnisse/e5_cert_3_eigen.txt                 194 digits   12 steps      0.4 s  VALID
+  own  research/ecpp/ergebnisse/e5_cert_4_eigen.txt                 234 digits   20 steps      1.4 s  VALID
+  own  research/ecpp/ergebnisse/e5_cert_5_eigen.txt                 245 digits   18 steps      1.2 s  VALID
+  own  research/ecpp/ergebnisse/e5_cert_6_eigen.txt                 477 digits   47 steps     16.8 s  VALID
+  own  research/ecpp/ergebnisse/e5_cert_t2_1_eigen.txt              329 digits   27 steps      4.8 s  VALID
+  own  research/ecpp/ergebnisse/e5_cert_t2_2_eigen.txt              693 digits   69 steps     61.5 s  VALID
+  own  research/ecpp/ergebnisse/e5_cert_t2_3_eigen.txt               50 digits    3 steps      0.0 s  VALID
+  own  research/ecpp/ergebnisse/e5_cert_t2_4_eigen.txt              175 digits   12 steps      0.4 s  VALID
+  own  research/ecpp/ergebnisse/e5_cert_t2_5_eigen.txt              639 digits   69 steps     46.9 s  VALID
+  own  research/ecpp/ergebnisse/e5_cert_t2_7_eigen.txt               48 digits    3 steps      0.0 s  VALID
+  own  research/ecpp/ergebnisse/e5_cert_t2_8_eigen.txt              293 digits   26 steps      2.5 s  VALID
+  own  research/ecpp/ergebnisse/e5_cert_t2_9_eigen.txt               50 digits    3 steps      0.0 s  VALID
+  own  research/ecpp/ergebnisse/e5_cert_t2_10_eigen.txt             221 digits   17 steps      0.9 s  VALID
+  own  research/ecpp/ergebnisse/e5_cert_t2_11_eigen.txt             162 digits   13 steps      0.3 s  VALID
+  own  research/ecpp/ergebnisse/e5_cert_t2_12_eigen.txt              57 digits    3 steps      0.0 s  VALID
+  own  research/ecpp/ergebnisse/e5_cert_t2_13_eigen.txt              57 digits    3 steps      0.0 s  VALID
+  own  research/ecpp/ergebnisse/e5_cert_t2_14_eigen.txt              76 digits    6 steps      0.0 s  VALID
+  own  research/ecpp/ergebnisse/e5_cert_t2_15_eigen.txt             357 digits   28 steps      4.5 s  VALID
+  own  research/ecpp/ergebnisse/e5_cert_t2_17_eigen.txt             108 digits    8 steps      0.1 s  VALID
+  own  research/ecpp/ergebnisse/e5_cert_t2_18_eigen.txt             162 digits   12 steps      0.4 s  VALID
+  own  research/ecpp/ergebnisse/e5_cert_t2_19_eigen.txt             621 digits   59 steps     35.4 s  VALID
+
+PROVER (prove, seed 1): N = next probable prime after 10^k; digits, steps, seconds, checked
+  10^40 + 121      41 digits    2 steps      1.9 s  VALID
+  10^60 + 7        61 digits    4 steps      0.3 s  VALID
+  10^100 + 267     101 digits    7 steps      1.6 s  VALID
+  10^150 + 67      151 digits   11 steps      3.0 s  VALID
+  10^200 + 357     201 digits   16 steps      7.1 s  VALID
+md5 of this output (without this line) a98a3c48 · md5 of tools/benchmark.py cae1fe24

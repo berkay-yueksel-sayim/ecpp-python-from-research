@@ -1,0 +1,31 @@
+case kind | this checker | PARI/GP | count
+composite, known false | 0 | 0 | 3
+composite, random | 0 | 0 | 1194
+composite, random | 0 | 1 | 6
+prime, a+1 | 0 | 0 | 237
+prime, a+1 | 1 | 1 | 3
+prime, s*q | 0 | 0 | 240
+prime, t+1 | 0 | 0 | 240
+prime, valid | 1 | 1 | 240
+prime, y+1 | 0 | 0 | 240
+
+cases: 2403; verdicts differing: 6; composite N accepted: this checker 0, PARI/GP 6
+
+case 1289 (composite, random): [[5053, -74, 8, 4107, [965, 1506]]], this checker 0, PARI/GP 1
+    modulo 31: s*P = (9, 14), q*(s*P) = (9, 14)  (q = 641; a valid step needs q*(s*P) = None, the point at infinity)
+    modulo 163: s*P = (95, 46), q*(s*P) = (31, 144)  (q = 641; a valid step needs q*(s*P) = None, the point at infinity)
+case 1683 (composite, random): [[4633, -67, 3, 3818, [1899, 3365]]], this checker 0, PARI/GP 1
+    modulo 41: s*P = (15, 34), q*(s*P) = (15, 34)  (q = 1567; a valid step needs q*(s*P) = None, the point at infinity)
+    modulo 113: s*P = (1, 10), q*(s*P) = (1, 103)  (q = 1567; a valid step needs q*(s*P) = None, the point at infinity)
+case 2035 (composite, random): [[1921, 78, 4, 1678, [770, 1652]]], this checker 0, PARI/GP 1
+    modulo 17: s*P = (16, 10), q*(s*P) = (16, 10)  (q = 461; a valid step needs q*(s*P) = None, the point at infinity)
+    modulo 113: s*P = (1, 62), q*(s*P) = (79, 27)  (q = 461; a valid step needs q*(s*P) = None, the point at infinity)
+case 2038 (composite, random): [[5587, 47, 3, 4416, [2461, 4582]]], this checker 0, PARI/GP 1
+    modulo 37: s*P = (31, 6), q*(s*P) = (31, 31)  (q = 1847; a valid step needs q*(s*P) = None, the point at infinity)
+    modulo 151: s*P = (141, 72), q*(s*P) = (45, 52)  (q = 1847; a valid step needs q*(s*P) = None, the point at infinity)
+case 2177 (composite, random): [[10553, -194, 4, 1825, [4612, 1058]]], this checker 0, PARI/GP 1
+    modulo 61: s*P = (6, 22), q*(s*P) = (6, 22)  (q = 2687; a valid step needs q*(s*P) = None, the point at infinity)
+    modulo 173: s*P = (116, 169), q*(s*P) = (171, 68)  (q = 2687; a valid step needs q*(s*P) = None, the point at infinity)
+case 2397 (composite, random): [[15931, 242, 30, 8239, [11912, 6118]]], this checker 0, PARI/GP 1
+    modulo 89: s*P = (86, 43), q*(s*P) = (29, 60)  (q = 523; a valid step needs q*(s*P) = None, the point at infinity)
+    modulo 179: s*P = (93, 5), q*(s*P) = (45, 91)  (q = 523; a valid step needs q*(s*P) = None, the point at infinity)

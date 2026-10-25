@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ecpp-research"
+version = "0.1.0"
+description = "Elliptic curve primality proving (ECPP) in pure Python, with an independent certificate checker"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+authors = [{ name = "Berkay Yüksel Sayim" }]
+keywords = ["primality proving", "ECPP", "elliptic curves", "primality certificate", "number theory"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Intended Audience :: Science/Research",
+]
+dependencies = []
+
+[project.optional-dependencies]
+prove = ["mpmath"]
+fast = ["gmpy2"]
+test = ["pytest", "mpmath"]
+
+[project.scripts]
+ecpp-research = "ecpp_research.__main__:main"
+
+[project.urls]
+Repository = "https://github.com/berkay-yueksel-sayim/ecpp-python-from-research"
+Changelog = "https://github.com/berkay-yueksel-sayim/ecpp-python-from-research/blob/main/CHANGELOG.md"
+"Paper series data" = "https://github.com/berkay-yueksel-sayim/erdos-364-365-powerful-numbers-pell"
+
+[tool.setuptools]
+packages = ["ecpp_research"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

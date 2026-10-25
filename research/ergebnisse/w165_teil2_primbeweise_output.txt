@@ -1,0 +1,24 @@
+w165 · 2026-10-02 22:31
+PK/NK E2 ✅  PK cert_pk.txt angenommen (True), vier Verfaelschungen abgelehnt (True)
+PK E1 ✅  19 Faelle neu gebaut, Stellen wie w144, C teilt N genau einmal; Kofaktoren [48, 50, 50, 57, 57, 76, 108, 162, 162, 175, 221, 293, 329, 357, 621, 639, 693, 1191, 1687] Stellen
+       nur Pruefung: vorhandene Zertifikate, Zahlenliste unveraendert; ausstehend: keine
+  (D, k) = (3, 576) a-1: Kofaktor 329 St. — ✅ bewiesen (ECPP, 43 Schritte), eigener Pruefer
+  (D, k) = (3, 1212) a-1: Kofaktor 693 St. — ✅ bewiesen (ECPP, 93 Schritte), eigener Pruefer
+  (D, k) = (5, 40) a-1: Kofaktor  50 St. — ✅ bewiesen (ECPP, 3 Schritte), eigener Pruefer
+  (D, k) = (5, 140) a-1: Kofaktor 175 St. — ✅ bewiesen (ECPP, 23 Schritte), eigener Pruefer
+  (D, k) = (5, 510) a-1: Kofaktor 639 St. — ✅ bewiesen (ECPP, 87 Schritte), eigener Pruefer
+  (D, k) = (5, 950) a-1: Kofaktor 1191 St. — ✅ bewiesen (ECPP, 157 Schritte), eigener Pruefer
+  (D, k) = (6, 48) a-1: Kofaktor  48 St. — ✅ bewiesen (ECPP, 5 Schritte), eigener Pruefer
+  (D, k) = (6, 294) a-1: Kofaktor 293 St. — ✅ bewiesen (ECPP, 39 Schritte), eigener Pruefer
+  (D, k) = (7, 42) a+2: Kofaktor  50 St. — ✅ bewiesen (ECPP, 4 Schritte), eigener Pruefer
+  (D, k) = (10, 140) a-1: Kofaktor 221 St. — ✅ bewiesen (ECPP, 28 Schritte), eigener Pruefer
+  (D, k) = (13, 52) a-1: Kofaktor 162 St. — ✅ bewiesen (ECPP, 21 Schritte), eigener Pruefer
+  (D, k) = (21, 28) a-1: Kofaktor  57 St. — ✅ bewiesen (ECPP, 7 Schritte), eigener Pruefer
+  (D, k) = (22, 22) a-1: Kofaktor  57 St. — ✅ bewiesen (ECPP, 5 Schritte), eigener Pruefer
+  (D, k) = (70, 28) a-1: Kofaktor  76 St. — ✅ bewiesen (ECPP, 6 Schritte), eigener Pruefer
+  (D, k) = (110, 220) a-1: Kofaktor 357 St. — ✅ bewiesen (ECPP, 52 Schritte), eigener Pruefer
+  (D, k) = (167, 668) a-1: Kofaktor 1687 St. — ✅ bewiesen (ECPP, 184 Schritte), eigener Pruefer
+  (D, k) = (430, 16) a-1: Kofaktor 108 St. — ✅ bewiesen (ECPP, 14 Schritte), eigener Pruefer
+  (D, k) = (430, 24) a-1: Kofaktor 162 St. — ✅ bewiesen (ECPP, 21 Schritte), eigener Pruefer
+  (D, k) = (665, 140) a-1: Kofaktor 621 St. — ✅ bewiesen (ECPP, 85 Schritte), eigener Pruefer
+E3 ✅  19 von 19 Zertifikaten angenommen

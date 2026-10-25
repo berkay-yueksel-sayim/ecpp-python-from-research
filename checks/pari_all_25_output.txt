@@ -1,0 +1,34 @@
+gp -q checks/pari_all_25.gp · run in the container image dkr-pari:1 (sha256:6141e1ef5d14, PARI/GP from the Debian package) with the repository mounted read-only · 2026-10-23 · exit 0 · 124 s wall clock
+
+PARI/GP version: [2, 17, 2]
+PK research/ergebnisse/w164_zertifikate/cert_pk.txt: 41 digits, 4 steps, 2 ms, result 1
+NK research/ergebnisse/w164_zertifikate/cert_1.txt with t of step 1 shifted by 1: result 0
+Part I research/ergebnisse/w164_zertifikate/cert_1.txt: 111 digits, 13 steps, 18 ms, result 1
+Part I research/ergebnisse/w164_zertifikate/cert_2.txt: 112 digits, 13 steps, 23 ms, result 1
+Part I research/ergebnisse/w164_zertifikate/cert_3.txt: 194 digits, 23 steps, 87 ms, result 1
+Part I research/ergebnisse/w164_zertifikate/cert_4.txt: 234 digits, 39 steps, 180 ms, result 1
+Part I research/ergebnisse/w164_zertifikate/cert_5.txt: 245 digits, 34 steps, 128 ms, result 1
+Part I research/ergebnisse/w164_zertifikate/cert_6.txt: 477 digits, 67 steps, 863 ms, result 1
+Part II research/ergebnisse/w165_zertifikate/cert_1.txt: 329 digits, 43 steps, 236 ms, result 1
+Part II research/ergebnisse/w165_zertifikate/cert_2.txt: 693 digits, 93 steps, 2094 ms, result 1
+Part II research/ergebnisse/w165_zertifikate/cert_3.txt: 50 digits, 3 steps, 1 ms, result 1
+Part II research/ergebnisse/w165_zertifikate/cert_4.txt: 175 digits, 23 steps, 36 ms, result 1
+Part II research/ergebnisse/w165_zertifikate/cert_5.txt: 639 digits, 87 steps, 4143 ms, result 1
+Part II research/ergebnisse/w165_zertifikate/cert_6.txt: 1191 digits, 157 steps, 32657 ms, result 1
+Part II research/ergebnisse/w165_zertifikate/cert_7.txt: 48 digits, 5 steps, 3 ms, result 1
+Part II research/ergebnisse/w165_zertifikate/cert_8.txt: 293 digits, 39 steps, 245 ms, result 1
+Part II research/ergebnisse/w165_zertifikate/cert_9.txt: 50 digits, 4 steps, 3 ms, result 1
+Part II research/ergebnisse/w165_zertifikate/cert_10.txt: 221 digits, 28 steps, 125 ms, result 1
+Part II research/ergebnisse/w165_zertifikate/cert_11.txt: 162 digits, 21 steps, 52 ms, result 1
+Part II research/ergebnisse/w165_zertifikate/cert_12.txt: 57 digits, 7 steps, 4 ms, result 1
+Part II research/ergebnisse/w165_zertifikate/cert_13.txt: 57 digits, 5 steps, 4 ms, result 1
+Part II research/ergebnisse/w165_zertifikate/cert_14.txt: 76 digits, 6 steps, 3 ms, result 1
+Part II research/ergebnisse/w165_zertifikate/cert_15.txt: 357 digits, 52 steps, 496 ms, result 1
+Part II research/ergebnisse/w165_zertifikate/cert_16.txt: 1687 digits, 184 steps, 76695 ms, result 1
+Part II research/ergebnisse/w165_zertifikate/cert_17.txt: 108 digits, 14 steps, 23 ms, result 1
+Part II research/ergebnisse/w165_zertifikate/cert_18.txt: 162 digits, 21 steps, 35 ms, result 1
+Part II research/ergebnisse/w165_zertifikate/cert_19.txt: 621 digits, 85 steps, 3833 ms, result 1
+RESULT: 25 of 25 PARI/GP certificates accepted by primecertisvalid; positive control 1, negative control 0
+
+--- stderr ---
+  ***   Warning: new maximum stack size = 2000003072 (1907.352 Mbytes).
