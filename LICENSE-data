@@ -8,7 +8,8 @@ This license applies to the data:
     w164_ecpp.gp, w165_ecpp.gp and w165_rest.gp in research/ergebnisse/w164_zertifikate/ and w165_zertifikate/,
     which belong to the data, as in the data repository of the paper series;
     and the run outputs tools/benchmark_output.txt, tools/test_run_output.txt, checks/pari_all_25_output.txt,
-    checks/compare_cases.gp, checks/compare_ours.txt, checks/compare_pari.txt and checks/compare_with_pari_output.txt.
+    checks/compare_cases.gp, checks/compare_ours.txt, checks/compare_pari.txt, checks/compare_with_pari_output.txt and
+    checks/pari_minimal_reproduction_output.txt.
 
 You are free to:
 
@@ -27,6 +28,6 @@ Full license text: https://creativecommons.org/licenses/by/4.0/legalcode
 Summary: https://creativecommons.org/licenses/by/4.0/
 
 The code (the package ecpp_research/, tests/, tools/benchmark.py, checks/pari_all_25.gp, checks/compare_with_pari.py,
-checks/compare_with_pari.gp, the workflow in .github/, and in research/ the Python
+checks/compare_with_pari.gp, checks/pari_minimal_reproduction.gp, the workflow in .github/, and in research/ the Python
 scripts and the PARI/GP script research/ecpp/pari_pruefen.gp) and the documentation are licensed under the Apache
 License, Version 2.0; see the files LICENSE and NOTICE.

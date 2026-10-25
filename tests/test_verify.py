@@ -105,6 +105,28 @@ def test_format_roundtrip_and_errors():
             parse(bad)
 
 
+MALFORMED = {
+    'None': None, 'a string': 'abc', 'an int': 7, 'a dict': {'N': 7}, 'a step of three': [(1, 2, 3)],
+    'a step of six': [(1, 2, 3, 4, (5, 6), 7)], 'no point': [(10196873, 71, 1, 1021388, None)],
+    'a point of one': [(10196873, 71, 1, 1021388, (1,))], 'a float N': [(1e30, 71, 1, 1021388, (1, 2))],
+    'a str N': [('x', 71, 1, 1021388, (1, 2))], 'a bool N': [(True, 71, 1, 1021388, (1, 2))],
+    'a float coordinate': [(10196873, 71, 1, 1021388, (1.0, 2))], 'nested lists': [[[1], [2]]],
+}
+
+
+@pytest.mark.parametrize('label', sorted(MALFORMED))
+def test_malformed_input_is_rejected_not_raised(label):
+    """Input that is not a list of steps (N, t, s, a, (x, y)) with integers gives an invalid result with a reason."""
+    result = check_certificate(MALFORMED[label])
+    assert not result.valid and result.reason
+
+
+def test_malformed_step_is_rejected_by_check_step():
+    assert isinstance(check_step('x', 1, 1, 1, (1, 2)), str)
+    assert isinstance(check_step(10196873, 71, 1, 1021388, None), str)
+    assert isinstance(check_step(10196873, 71, 1, 1021388, (1, 2, 3)), str)
+
+
 def test_more_than_4300_digits():
     """Python refuses decimal integers above 4300 digits by default (3.11+); reading and writing lift the limit for
     the duration of the call only."""

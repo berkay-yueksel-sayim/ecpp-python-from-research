@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.1.1
+
+- `check_certificate` and `check_step` return an invalid result with a reason for input that is not a list of steps
+  `(N, t, s, a, (x, y))` with integers (a step of the wrong length, a missing point, a float or a string), instead of
+  raising an exception. No valid or invalid certificate is judged differently; the curve arithmetic is unchanged.
+  New tests for 13 kinds of malformed input.
+- `checks/pari_minimal_reproduction.gp` and its output: the six certificates for composite numbers that PARI/GP's
+  `primecertisvalid` accepts, reproduced with PARI/GP alone (2.17.2 and 2.19.0 give the same output). The finding is
+  bug #2723 in the PARI/GP bug tracker.
+- The automatic tests run on Python 3.10, 3.11, 3.12 and 3.13, and on 3.12 also with `gmpy2`.
+- The README asks to cite the software by its concept DOI (all versions). `tools/benchmark_output.txt` is the run of
+  version 0.1.0; `tools/test_run_output.txt` is a new run of the complete test suite.
+
 ## 0.1.0
 
 First public version.

@@ -45,6 +45,9 @@ from ecpp_research.prove import prove
 steps = prove(2**127 - 1)            # a list of steps (N, t, s, a, (x, y)), as tuples of ints
 ```
 
+`check_certificate` takes a list of such steps; for anything else (a step of the wrong length, a missing point, a value
+that is not an integer) it returns an invalid result with the reason instead of raising.
+
 ## Where it comes from, and what it supports
 
 The paper series *Consecutive Powerful Numbers and Pell Equations: Triples, Pairs, and Further Observations* (B. Y. Sayim,
@@ -106,7 +109,11 @@ In the same review, a comparison with PARI/GP found that PARI/GP's `primecertisv
 certificates for composite numbers: 6 of 1203 one-step certificates for products of two primes
 ([`checks/compare_with_pari_output.txt`](checks/compare_with_pari_output.txt), with the exact recomputation of each).
 Version 2.19.0 (Debian package `pari-gp` 2.19.0-1), the newest at the time of writing, gives the same 2403 verdicts, byte
-for byte (`checks/compare_pari.txt`). We reported this to the PARI/GP developers on 25 October 2026. PARI/GP's agreement is therefore a second opinion, not a proof.
+for byte (`checks/compare_pari.txt`). [`checks/pari_minimal_reproduction.gp`](checks/pari_minimal_reproduction.gp)
+reproduces the six cases with PARI/GP alone, without this package: for each it prints PARI/GP's verdict, the factorization
+of N, and q*(s*P) modulo each prime factor, which is not the point at infinity modulo any of them (output for 2.17.2 and
+2.19.0 in [`checks/pari_minimal_reproduction_output.txt`](checks/pari_minimal_reproduction_output.txt)). We reported this
+to the PARI/GP developers on 25 October 2026 (bug #2723 in the PARI/GP bug tracker). PARI/GP's agreement is therefore a second opinion, not a proof.
 
 ## Scope and evidence
 
@@ -162,7 +169,8 @@ error in the prover can cost time but cannot produce a false proof.
 
 Single runs of [`tools/benchmark.py`](tools/benchmark.py) on one laptop (Intel Core processor; the code uses one core),
 Python 3.12 on Windows 11, `gmpy2` installed for the prover, on mains power, while one other computation ran on the same
-machine ([`tools/benchmark_output.txt`](tools/benchmark_output.txt), which lists all 50 certificates). Runs of the same
+machine ([`tools/benchmark_output.txt`](tools/benchmark_output.txt), which lists all 50 certificates; run with version
+0.1.0, whose arithmetic version 0.1.1 keeps unchanged). Runs of the same
 checker on battery power took up to about half as long again. Take the numbers as an order of magnitude.
 
 | Task | Digits | Steps | Time |
@@ -207,7 +215,7 @@ caches the class polynomials it computes.
 ```bash
 pip install ".[test]"
 pytest                      # about two minutes
-ECPP_SLOW=1 pytest          # adds the 8 certificates above 500 digits, the class polynomials for D < 2000, and the re-proof of Part I (53 minutes on the benchmark machine, tools/test_run_output.txt)
+ECPP_SLOW=1 pytest          # adds the 8 certificates above 500 digits, the class polynomials for D < 2000, and the re-proof of Part I (about an hour on the benchmark machine, tools/test_run_output.txt)
 ```
 
 The tests carry over the controls of the research scripts (Jacobi symbol against Euler's criterion, square roots,
@@ -216,8 +224,9 @@ Cornacchia against exhaustive search, the class numbers of Atkin–Morain's Tabl
 checker and the research checker, change the first step of the small certificates at random (800 seeded changes), and
 run the prover on random primes of 30, 45 and 60 digits. [`tests/test_soundness.py`](tests/test_soundness.py) checks the
 arithmetic against exact computation modulo each prime divisor (with the research arithmetic as positive control) and
-rejects the three false certificates. [`checks/`](checks/) holds the comparison with PARI/GP, which needs PARI/GP and is
-not part of `pytest`.
+rejects the three false certificates; malformed input (13 kinds) must give an invalid result, not an exception.
+[`checks/`](checks/) holds the comparison with PARI/GP and the minimal reproduction, which need PARI/GP and are not part
+of `pytest`. The automatic tests on GitHub run on Python 3.10 to 3.13, and once with `gmpy2` installed.
 
 ## Related software
 
@@ -244,8 +253,9 @@ The code and the documentation are licensed under the Apache License, Version 2.
 result files and PARI/GP job files in `research/ergebnisse/` and `research/ecpp/ergebnisse/`, and the run outputs in
 `tools/` and `checks/`, are licensed under CC BY 4.0 (`LICENSE-data`), as in the data repository.
 
-If you use the checker, the prover or the certificates, please cite this version,
-[doi:10.5281/zenodo.23585828](https://doi.org/10.5281/zenodo.23585828), and the volume, [doi:10.5281/zenodo.23127546](https://doi.org/10.5281/zenodo.23127546).
+If you use the checker, the prover or the certificates, please cite the software,
+[doi:10.5281/zenodo.23585827](https://doi.org/10.5281/zenodo.23585827) (all versions; each version also has its own DOI
+on Zenodo), and the volume, [doi:10.5281/zenodo.23127546](https://doi.org/10.5281/zenodo.23127546).
 
 Generative AI tools were used in writing this code and its documentation, as in the papers of the series, where the use is
 disclosed.

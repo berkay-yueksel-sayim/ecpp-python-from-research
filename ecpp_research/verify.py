@@ -58,8 +58,27 @@ def is_prime_small(n):
     return True
 
 
+def _is_int(v):
+    return isinstance(v, int) and not isinstance(v, bool)
+
+
+def _malformed(step):
+    """Return a reason if ``step`` is not (N, t, s, a, (x, y)) with ints, else None."""
+    if not isinstance(step, (tuple, list)) or len(step) != 5:
+        return 'malformed step (expected N, t, s, a, (x, y))'
+    if not all(_is_int(v) for v in step[:4]):
+        return 'malformed step (N, t, s and a must be integers)'
+    P = step[4]
+    if not isinstance(P, (tuple, list)) or len(P) != 2 or not all(_is_int(v) for v in P):
+        return 'malformed step (the point must be a pair of integers)'
+    return None
+
+
 def check_step(N, t, s, a, P):
     """Check one step. Returns q = m/s (an int) if the step is valid, otherwise a str naming the failed condition."""
+    bad = _malformed((N, t, s, a, P))
+    if bad:
+        return bad
     x, y = P
     if N < 2 or gcd(N, 6) != 1:
         return 'gcd(N, 6) != 1'
@@ -102,11 +121,19 @@ class Result:
 def check_certificate(steps, number=None):
     """Check a whole certificate (list of steps (N, t, s, a, (x, y))).
 
-    If ``number`` is given, the first N must equal it. Returns a ``Result``.
+    If ``number`` is given, the first N must equal it. Returns a ``Result``; input that is not a list of such steps
+    gives an invalid ``Result`` with the reason, not an exception.
     """
+    if not isinstance(steps, (tuple, list)):
+        return Result(False, 0, 0, 'not a list of steps')
     steps = list(steps)
     if not steps:
         return Result(False, 0, 0, 'empty certificate')
+    for i, step in enumerate(steps):
+        bad = _malformed(step)
+        if bad:
+            first = steps[0][0] if i else 0
+            return Result(False, first, len(steps), f'step {i}: {bad}')
     first = steps[0][0]
     if number is not None and first != number:
         return Result(False, first, len(steps), 'the certificate belongs to a different number')

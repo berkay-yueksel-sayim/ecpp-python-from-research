@@ -1,0 +1,45 @@
+gp -q checks/pari_minimal_reproduction.gp · run twice in local Docker images of Debian's pari-gp (2.17.2-1, image sha256:6141e1ef5d14; 2.19.0-1, image sha256:b5fd27c34bb7), repository mounted read-only, no network · 2026-10-25
+
+== PARI/GP 2.17.2
+version: [2, 17, 2]
+certificate [[5053, -74, 8, 4107, [965, 1506]]]: primecertisvalid = 1, factor(N) = [31, 1; 163, 1], q = 641, isprime(q) = 1
+   mod 31: #E = 40, s*P = [9, 14], q*(s*P) = [9, 14]
+   mod 163: #E = 142, s*P = [95, 46], q*(s*P) = [31, 144]
+certificate [[4633, -67, 3, 3818, [1899, 3365]]]: primecertisvalid = 1, factor(N) = [41, 1; 113, 1], q = 1567, isprime(q) = 1
+   mod 41: #E = 54, s*P = [15, 34], q*(s*P) = [15, 34]
+   mod 113: #E = 105, s*P = [1, 10], q*(s*P) = [1, 103]
+certificate [[1921, 78, 4, 1678, [770, 1652]]]: primecertisvalid = 1, factor(N) = [17, 1; 113, 1], q = 461, isprime(q) = 1
+   mod 17: #E = 23, s*P = [16, 10], q*(s*P) = [16, 10]
+   mod 113: #E = 108, s*P = [1, 62], q*(s*P) = [79, 27]
+certificate [[5587, 47, 3, 4416, [2461, 4582]]]: primecertisvalid = 1, factor(N) = [37, 1; 151, 1], q = 1847, isprime(q) = 1
+   mod 37: #E = 32, s*P = [31, 6], q*(s*P) = [31, 31]
+   mod 151: #E = 160, s*P = [141, 72], q*(s*P) = [45, 52]
+certificate [[10553, -194, 4, 1825, [4612, 1058]]]: primecertisvalid = 1, factor(N) = [61, 1; 173, 1], q = 2687, isprime(q) = 1
+   mod 61: #E = 68, s*P = [6, 22], q*(s*P) = [6, 22]
+   mod 173: #E = 180, s*P = [116, 169], q*(s*P) = [171, 68]
+certificate [[15931, 242, 30, 8239, [11912, 6118]]]: primecertisvalid = 1, factor(N) = [89, 1; 179, 1], q = 523, isprime(q) = 1
+   mod 89: #E = 94, s*P = [86, 43], q*(s*P) = [29, 60]
+   mod 179: #E = 200, s*P = [93, 5], q*(s*P) = [45, 91]
+control, a certificate from primecert: 1
+
+== PARI/GP 2.19.0
+version: [2, 19, 0]
+certificate [[5053, -74, 8, 4107, [965, 1506]]]: primecertisvalid = 1, factor(N) = [31, 1; 163, 1], q = 641, isprime(q) = 1
+   mod 31: #E = 40, s*P = [9, 14], q*(s*P) = [9, 14]
+   mod 163: #E = 142, s*P = [95, 46], q*(s*P) = [31, 144]
+certificate [[4633, -67, 3, 3818, [1899, 3365]]]: primecertisvalid = 1, factor(N) = [41, 1; 113, 1], q = 1567, isprime(q) = 1
+   mod 41: #E = 54, s*P = [15, 34], q*(s*P) = [15, 34]
+   mod 113: #E = 105, s*P = [1, 10], q*(s*P) = [1, 103]
+certificate [[1921, 78, 4, 1678, [770, 1652]]]: primecertisvalid = 1, factor(N) = [17, 1; 113, 1], q = 461, isprime(q) = 1
+   mod 17: #E = 23, s*P = [16, 10], q*(s*P) = [16, 10]
+   mod 113: #E = 108, s*P = [1, 62], q*(s*P) = [79, 27]
+certificate [[5587, 47, 3, 4416, [2461, 4582]]]: primecertisvalid = 1, factor(N) = [37, 1; 151, 1], q = 1847, isprime(q) = 1
+   mod 37: #E = 32, s*P = [31, 6], q*(s*P) = [31, 31]
+   mod 151: #E = 160, s*P = [141, 72], q*(s*P) = [45, 52]
+certificate [[10553, -194, 4, 1825, [4612, 1058]]]: primecertisvalid = 1, factor(N) = [61, 1; 173, 1], q = 2687, isprime(q) = 1
+   mod 61: #E = 68, s*P = [6, 22], q*(s*P) = [6, 22]
+   mod 173: #E = 180, s*P = [116, 169], q*(s*P) = [171, 68]
+certificate [[15931, 242, 30, 8239, [11912, 6118]]]: primecertisvalid = 1, factor(N) = [89, 1; 179, 1], q = 523, isprime(q) = 1
+   mod 89: #E = 94, s*P = [86, 43], q*(s*P) = [29, 60]
+   mod 179: #E = 200, s*P = [93, 5], q*(s*P) = [45, 91]
+control, a certificate from primecert: 1

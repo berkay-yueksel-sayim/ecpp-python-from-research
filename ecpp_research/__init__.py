@@ -16,6 +16,6 @@ The checker (``verify``, ``certificate``, ``curves``) needs only the standard li
 from .certificate import CertificateFormatError, dump, dumps, load, parse
 from .verify import Result, check_certificate, check_step, is_prime_small
 
-__version__ = '0.1.0'
+__version__ = '0.1.1'
 __all__ = ['CertificateFormatError', 'Result', 'check_certificate', 'check_step', 'dump', 'dumps',
            'is_prime_small', 'load', 'parse', '__version__']

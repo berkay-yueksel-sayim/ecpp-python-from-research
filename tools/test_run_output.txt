@@ -1,21 +1,21 @@
-ECPP_SLOW=1 pytest -q --durations=15 · 2026-10-24 · Python 3.12.10 · Windows-11-10.0.26300-SP0 · exit 0 · 3181 s wall clock
+ECPP_SLOW=1 pytest -q --durations=15 · 2026-10-25 · Python 3.12.10 · Windows-11-10.0.26300-SP0 · exit 0 · 3612 s wall clock
 
-........................................................................ [ 90%]
-........                                                                 [100%]
+........................................................................ [ 76%]
+......................                                                   [100%]
 ============================ slowest 15 durations =============================
-1751.09s call     tests/test_verify.py::test_research_certificate_accepted[PARI Part II no. 16]
-609.11s call     tests/test_verify.py::test_research_certificate_accepted[PARI Part II no. 6]
-244.52s call     tests/test_prove.py::test_part_one_numbers_reproved
-83.93s call     tests/test_verify.py::test_research_certificate_accepted[own Part II no. 2]
-83.76s call     tests/test_verify.py::test_research_certificate_accepted[PARI Part II no. 2]
-78.71s call     tests/test_verify.py::test_research_certificate_accepted[PARI Part II no. 5]
-69.96s call     tests/test_verify.py::test_research_certificate_accepted[own Part II no. 5]
-61.06s call     tests/test_verify.py::test_research_certificate_accepted[PARI Part II no. 19]
-54.96s call     tests/test_verify.py::test_research_certificate_accepted[own Part II no. 19]
-25.16s call     tests/test_verify.py::test_research_certificate_accepted[PARI Part I no. 6]
-19.75s call     tests/test_verify.py::test_step_agrees_with_w164_on_every_step
-18.92s call     tests/test_verify.py::test_research_certificate_accepted[own Part I no. 6]
-11.90s call     tests/test_verify.py::test_research_certificate_accepted[PARI Part II no. 15]
-7.49s call     tests/test_verify.py::test_corruptions_judged_like_w164
-7.15s call     tests/test_verify.py::test_research_certificate_accepted[own Part II no. 15]
-80 passed in 3178.87s (0:52:58)
+1897.83s call     tests/test_verify.py::test_research_certificate_accepted[PARI Part II no. 16]
+663.33s call     tests/test_verify.py::test_research_certificate_accepted[PARI Part II no. 6]
+333.00s call     tests/test_prove.py::test_part_one_numbers_reproved
+111.56s call     tests/test_verify.py::test_research_certificate_accepted[own Part II no. 2]
+100.01s call     tests/test_verify.py::test_research_certificate_accepted[PARI Part II no. 2]
+95.21s call     tests/test_verify.py::test_research_certificate_accepted[own Part II no. 5]
+88.28s call     tests/test_verify.py::test_research_certificate_accepted[PARI Part II no. 5]
+80.01s call     tests/test_verify.py::test_research_certificate_accepted[PARI Part II no. 19]
+69.99s call     tests/test_verify.py::test_research_certificate_accepted[own Part II no. 19]
+28.45s call     tests/test_verify.py::test_research_certificate_accepted[PARI Part I no. 6]
+25.00s call     tests/test_verify.py::test_research_certificate_accepted[own Part I no. 6]
+22.65s call     tests/test_verify.py::test_step_agrees_with_w164_on_every_step
+13.81s call     tests/test_verify.py::test_research_certificate_accepted[PARI Part II no. 15]
+12.43s call     tests/test_verify.py::test_corruptions_judged_like_w164
+8.25s call     tests/test_verify.py::test_research_certificate_accepted[PARI Part II no. 1]
+94 passed in 3610.45s (1:00:10)
